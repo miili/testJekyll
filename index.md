@@ -81,12 +81,15 @@ in many different ways. However, a set of Voronoi nuclei defines only
 one specific model. The number of layers in a model is undefined and
 will also be inverted for ("transdimensional").
 
+{% raw %}
+ $$C_e = \sigma^2R$$
+{% endraw %}
 
-$$C_e = \sigma^2R$$
 
 The covariance matrix $C_e$ is dependent on $\sigma$ and R, which is the
 symmetric diagonal-constant or Toeplitz matrix.
 
+{% raw %}
 $$R = \begin{bmatrix}
 1 & c_{1} & c_{2} & \hdots & c_{n-1}\\
 c_{1} & 1 & c_{1} & \hdots & c_{n-2}\\
@@ -94,6 +97,7 @@ c_{2} & c_{1} & 1 & \hdots & c_{n-3}\\
  &  &  &  \vdots & \\
 c_{n-1} & c_{n-2} & c_{n-3} & \hdots & 1
 \end{bmatrix}$$
+{% endraw %}
 
 We consider two correlation laws for the correlation matrix R. The
 exponential law given by $$\label{eq:exp}
